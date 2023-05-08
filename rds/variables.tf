@@ -9,6 +9,5 @@ variable "db_snapshot_identifier" {}
 variable "db_instance_class" {}
 variable "availability_zone_2" {}
 variable "db_instance_identifier" {}
-variable "db_snapshot_identifier" {}
 variable "multi_az_deployment" {}
 variable "database_security_group_id" {}
