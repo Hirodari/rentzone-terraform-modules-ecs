@@ -1,6 +1,7 @@
 # environment variables
 variable "project_name" {}
 variable "environment" {}
+# vpc variables for natgateway
 variable "public_subnet_az1_id" {}
 variable "internet_gateway" {}
 variable "public_subnet_az2_id" {}
