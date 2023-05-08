@@ -1,6 +1,7 @@
 # environment variables
 variable "project_name" {}
-# variable "environment" {}
+variable "environment" {}
+variable "region" {}
 
 # vpc variables
 variable "vpc_cidr" {}
