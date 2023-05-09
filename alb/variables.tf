@@ -1,8 +1,11 @@
+# environment variables
 variable "project_name" {}
 variable "environment" {}
+# sg variables
 variable "alb_security_group_id" {}
+# vpc variables
 variable "public_subnet_az1_id" {}
 variable "public_subnet_az2_id" {}
 variable "vpc_id" {}
-variable "project_name" {}
-variable "project_name" {}
+# acm variables
+variable "certificate_arn" {}
