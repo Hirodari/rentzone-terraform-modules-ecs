@@ -35,7 +35,7 @@ resource "aws_ecs_task_definition" "ecs_task_definition" {
     {
       name      = "${var.project_name}-${var.environment}-container"
       image     = "${var.container_image}"
-      essential = ["FARGATE"]
+      essential = true
 
       portMappings = [
         {
@@ -46,7 +46,7 @@ resource "aws_ecs_task_definition" "ecs_task_definition" {
 
       environmentFiles = [
         {
-          value = "${var.env_file_bucket_name}/${var.env_filename}"
+          value = "${var.env_file_bucket_name_arn}/${var.env_filename}"
           type  = "s3"
         }
       ]
